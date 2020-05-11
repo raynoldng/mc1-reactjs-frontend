@@ -14,7 +14,6 @@ class Questions extends Component {
   }
 
   async componentDidMount() {
-    alert(HOSTNAME)
     const questions = (await axios.get(HOSTNAME)).data;
     this.setState({
       questions,

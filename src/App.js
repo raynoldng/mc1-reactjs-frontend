@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {Route, withRouter} from 'react-router-dom';
-// import auth0Client from './Auth';
 import NavBar from './NavBar/NavBar';
 import Question from './Question/Question';
 import Questions from './Questions/Questions';
@@ -21,12 +20,6 @@ class App extends Component {
       this.setState({checkingSession:false});
       return;
     }
-    // try {
-    //   await auth0Client.silentAuth();
-    //   this.forceUpdate();
-    // } catch (err) {
-    //   if (err.error !== 'login_required') console.log(err.error);
-    // }
     this.setState({checkingSession:false});
   }
 

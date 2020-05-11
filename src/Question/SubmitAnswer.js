@@ -1,6 +1,5 @@
 import React, {Component, Fragment} from 'react';
 import {withRouter} from 'react-router-dom';
-// import auth0Client from '../Auth';
 
 class SubmitAnswer extends Component {
   constructor(props) {
@@ -25,7 +24,6 @@ class SubmitAnswer extends Component {
   }
 
   render() {
-    // if (!auth0Client.isAuthenticated()) return null;
     return (
       <Fragment>
         <div className="form-group text-center">

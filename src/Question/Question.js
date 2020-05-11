@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import SubmitAnswer from './SubmitAnswer';
-// import auth0Client from '../Auth';
 
 import { HOSTNAME } from '../contants'
 
@@ -30,11 +29,7 @@ class Question extends Component {
   async submitAnswer(answer) {
     await axios.post(`${HOSTNAME}/answer/${this.state.question.id}`, {
       answer,
-    } // ,
-    // {
-    //   headers: { 'Authorization': `Bearer ${auth0Client.getIdToken()}` }
-    // }
-    );
+    });
     await this.refreshQuestion();
   }
 
