@@ -4,7 +4,6 @@ import NavBar from './NavBar/NavBar';
 import Question from './Question/Question';
 import Questions from './Questions/Questions';
 import NewQuestion from './NewQuestion/NewQuestion';
-import SecuredRoute from './SecuredRoute/SecuredRoute';
 
 class App extends Component {
   constructor(props) {
@@ -24,7 +23,7 @@ class App extends Component {
         <NavBar/>
         <Route exact path='/' component={Questions}/>
         <Route exact path='/question/:questionId' component={Question}/>
-        <SecuredRoute path='/new-question'
+        <Route path='/new-question'
                       component={NewQuestion}
                       checkingSession={this.state.checkingSession} />
       </div>
