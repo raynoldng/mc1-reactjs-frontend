@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import SubmitAnswer from './SubmitAnswer';
 
-import { HOSTNAME } from '../contants'
+import { HOSTNAME } from '../constants'
 
 class Question extends Component {
   constructor(props) {

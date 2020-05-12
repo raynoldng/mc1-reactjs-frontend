@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
-import { HOSTNAME } from '../contants'
+import { HOSTNAME } from '../constants'
 
 class NewQuestion extends Component {
   constructor(props) {
